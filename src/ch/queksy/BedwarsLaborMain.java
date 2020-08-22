@@ -4,7 +4,5 @@ package ch.queksy;
 
 public class BedwarsLaborMain {
 
-    public static void main(String[] args) {
-        System.out.println("testmessage");
-    }
+
 }
