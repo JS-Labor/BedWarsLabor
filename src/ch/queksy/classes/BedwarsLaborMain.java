@@ -2,10 +2,6 @@
 
 package ch.queksy.classes;
 
-import ch.queksy.gadgets.TNTBallGadget;
-import org.bukkit.Material;
-import org.bukkit.inventory.ItemStack;
-
 public class BedwarsLaborMain {
 
     public void onEnable() {
