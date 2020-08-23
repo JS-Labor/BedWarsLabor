@@ -2,7 +2,9 @@
 
 package ch.queksy.classes;
 
-public class BedwarsLaborMain {
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class BedwarsLaborMain extends JavaPlugin {
 
     public void onEnable() {
 
