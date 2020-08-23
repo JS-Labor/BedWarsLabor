@@ -4,5 +4,4 @@ main: ch.queksy.classes.BedwarsLaborMain
 version: 1.0.0
 api-version: 1.8.8
 description: BedwarsPlugin a little bit like that from Hypixel
-authors: [Joel_Schaller, Andrea_Allesandra_Amato, Martin_Brunner]
-prefix: \u001b[31mtrestttt
+authors: [Joel Schaller, Andrea Allesandra Amato, Martin Brunner]

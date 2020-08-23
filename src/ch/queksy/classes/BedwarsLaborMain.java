@@ -2,6 +2,7 @@
 
 package ch.queksy.classes;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class BedwarsLaborMain extends JavaPlugin {
