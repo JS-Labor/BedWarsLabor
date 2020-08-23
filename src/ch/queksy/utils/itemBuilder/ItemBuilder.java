@@ -15,10 +15,16 @@ public class ItemBuilder {
     private ItemStack item;
     private ItemMeta itemMeta;
 
-    public ItemBuilder(Material material) {
-        item = new ItemStack(material);
+    public ItemBuilder(Material material, short subID) {
+        item = new ItemStack(material, 1, subID);
         itemMeta = item.getItemMeta();
     }
+
+    public ItemBuilder(Material material) {
+        this(material, (short) 0);
+    }
+
+
 
     public ItemBuilder setAmount(int amount) {
         item.setAmount(amount);
