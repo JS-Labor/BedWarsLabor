@@ -12,7 +12,11 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 
+import java.util.HashMap;
+
 public class InteractListener implements Listener {
+
+    private HashMap<String, Long> cooldown = new HashMap<>();
 
     @EventHandler
     public void onShoot(PlayerInteractEvent event) {
@@ -32,6 +36,7 @@ public class InteractListener implements Listener {
                             player.getInventory().setItemInHand(new ItemStack(Material.AIR));
                         } else {
                             fireballItem.setAmount(fireballItem.getAmount() - 1);
+                            cooldown.put(player.getName(), Long.valueOf(System.currentTimeMillis()));
                         }
                     }
                 }
