@@ -2,6 +2,7 @@
 
 package ch.queksy.classes;
 
+import ch.queksy.commands.GamemodeCommand;
 import ch.queksy.gadgets.FirechargeGadget.InteractListener;
 import ch.queksy.gadgets.FirechargeGadget.FirechargeGadget;
 import org.bukkit.Bukkit;
@@ -12,6 +13,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class BedwarsLaborMain extends JavaPlugin implements Listener {
 
     public void onEnable() {
+
+        getCommand("gm").setExecutor(new GamemodeCommand());
 
         Bukkit.getPluginManager().registerEvents(new InteractListener(), this);
         for (Player players : Bukkit.getOnlinePlayers()) {
