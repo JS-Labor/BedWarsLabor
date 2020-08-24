@@ -1,6 +1,6 @@
 //Class by Joel Schaller made at 11:45 on 23.08.2020
 
-package ch.queksy.gadgets.TNTBallGadget;
+package ch.queksy.gadgets.FirechargeGadget;
 
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
@@ -27,7 +27,7 @@ public class InteractListener implements Listener {
 
         if (event.getAction().equals(Action.RIGHT_CLICK_AIR) || event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
             try {
-                if (fireballItem.getItemMeta().getDisplayName().equals(TNTBallGadget.getName())) {
+                if (fireballItem.getItemMeta().getDisplayName().equals(FirechargeGadget.getName())) {
                     if (cooldown.containsKey(player.getName())) {
                         if (System.currentTimeMillis()  - cooldown.get(player.getName()) <= 400) {
                             player.sendMessage(ChatColor.RED + "please don't spam!");

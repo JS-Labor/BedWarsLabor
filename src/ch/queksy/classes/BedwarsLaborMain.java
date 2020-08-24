@@ -2,8 +2,8 @@
 
 package ch.queksy.classes;
 
-import ch.queksy.gadgets.TNTBallGadget.InteractListener;
-import ch.queksy.gadgets.TNTBallGadget.TNTBallGadget;
+import ch.queksy.gadgets.FirechargeGadget.InteractListener;
+import ch.queksy.gadgets.FirechargeGadget.FirechargeGadget;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
@@ -15,7 +15,7 @@ public class BedwarsLaborMain extends JavaPlugin implements Listener {
 
         Bukkit.getPluginManager().registerEvents(new InteractListener(), this);
         for (Player players : Bukkit.getOnlinePlayers()) {
-            players.getInventory().addItem(new TNTBallGadget());
+            players.getInventory().addItem(new FirechargeGadget());
         }
     }
 
