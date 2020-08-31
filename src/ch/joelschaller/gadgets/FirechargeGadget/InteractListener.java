@@ -1,6 +1,6 @@
 //Class by Joel Schaller made at 11:45 on 23.08.2020
 
-package ch.queksy.gadgets.FirechargeGadget;
+package ch.joelschaller.gadgets.FirechargeGadget;
 
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;

@@ -1,6 +1,6 @@
 //Class by Joel Schaller made at 18:30 on 24.08.2020
 
-package ch.queksy.commands;
+package ch.joelschaller.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;

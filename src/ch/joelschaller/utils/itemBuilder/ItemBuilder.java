@@ -1,6 +1,6 @@
 //Class by Joel Schaller made at 22:54 on 22.08.2020
 
-package ch.queksy.utils.itemBuilder;
+package ch.joelschaller.utils.itemBuilder;
 
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;

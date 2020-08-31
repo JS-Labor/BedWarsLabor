@@ -1,14 +1,12 @@
 //Class by Joel Schaller made at 13:35 on 25.08.2020
 
-package ch.queksy.utils.itemBuilder.configManager;
+package ch.joelschaller.utils.itemBuilder.configManager;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.io.File;
-import java.nio.file.CopyOption;
-import java.nio.file.Files;
 
 public class BedwarsConfig extends YamlConfiguration {
 

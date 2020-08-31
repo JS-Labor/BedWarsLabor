@@ -1,6 +1,6 @@
 //Class by Joel Schaller made at 18:02 on 26.08.2020
 
-package ch.queksy.commands;
+package ch.joelschaller.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

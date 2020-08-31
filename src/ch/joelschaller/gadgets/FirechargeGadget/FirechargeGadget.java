@@ -1,8 +1,8 @@
 //Class by Joel Schaller made at 21:40 on 22.08.2020
 
-package ch.queksy.gadgets.FirechargeGadget;
+package ch.joelschaller.gadgets.FirechargeGadget;
 
-import ch.queksy.utils.itemBuilder.ItemBuilder;
+import ch.joelschaller.utils.itemBuilder.ItemBuilder;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
