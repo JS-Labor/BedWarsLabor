@@ -12,7 +12,17 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class BedwarsLaborMain extends JavaPlugin implements Listener {
 
+    private static BedwarsLaborMain plugin;
+
+    public static BedwarsLaborMain getPlugin() {
+        return plugin;
+    }
+
     public void onEnable() {
+
+        plugin = this;
+
+        loadConfiguration();
 
         getCommand("gm").setExecutor(new GamemodeCommand());
 
@@ -25,5 +35,11 @@ public class BedwarsLaborMain extends JavaPlugin implements Listener {
     public void onDisable() {
 
 
+    }
+
+    public void loadConfiguration() {
+        //See "Creating you're defaults"
+        plugin.getConfig().options().copyDefaults(true);
+        plugin.saveConfig();
     }
 }

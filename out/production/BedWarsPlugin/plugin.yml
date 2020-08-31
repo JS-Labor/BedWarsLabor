@@ -5,3 +5,17 @@ version: 1.0.0
 api-version: 1.8.8
 description: BedwarsPlugin a little bit like that from Hypixel!
 authors: [Joel Schaller, Andrea Amato, Martin Brunner]
+
+commands:
+  gm:
+    permission:
+      bedwarslabor.gamemode
+
+permissions:
+  bedwarslabor.gamemode:
+    description: Allows /gm
+    default: false
+  bedwarslabor.admin:
+    default: op
+    children:
+      bedwarslabor.gamemode: true

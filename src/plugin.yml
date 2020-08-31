@@ -13,6 +13,8 @@ commands:
 
 permissions:
   bedwarslabor.gamemode:
+    description: Allows /gm
+    default: false
   bedwarslabor.admin:
     default: op
     children:
